@@ -1,0 +1,132 @@
+body{
+background-color : lightblue;
+background-image : url("assets/images/background.jpg"), url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+background-repeat : no-repeat;
+background-size: cover;
+}
+.heading{
+color : white;
+text-align : center;
+font-family: 'Chilanka', cursive;
+font-weight : Bolder;
+font-weight : 900;
+font-size : 50px;
+}
+@keyframes poping{
+from{
+height : 0%;
+}
+to{
+opacity : 100%;
+}
+}
+
+.container{
+padding-left : 0px;
+padding-right : 0px;
+padding-top : 0px;
+padding-bottom : 0px;
+background-color : rgba(0,0,0,0.0);
+max-width : 650px;
+margin : 0 auto;
+}
+.square{
+background-color : white;
+width : 200px;
+height : 120px;
+margin : 5px;
+float : left;
+border-radius : 5px;
+border : 2px solid gray;
+text-align : center;
+justify-content : center;
+align-items : center;
+font-size : 50px;
+padding-top : 40px;
+}
+.squaresecond{
+border-left : 5px solid gray;
+}
+.nextsquare{
+border-top :5px solid gray;
+}
+
+.popcontainer{
+background-color : rgba(0,0,0,0.9);
+width : 100%;
+height : 100%;
+position : absolute;
+top : 0px;
+justify-content : center;
+align-items : center;
+animation : poping 1s ease-in-out;
+}
+.popwindow{
+background-color : rgba(255,255,255,0.6);
+background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-weight : bolder;
+width : 700px;
+height : 400px;
+margin : auto;
+margin-top : 100px;
+padding : 20px;
+border-radius : 8px;
+text-align : center;
+animation : poping 1s ease-in-out;
+}
+.selector{
+border : 2px solid blue;
+border-radius : 8px;
+width : 260px;
+height : 250px;
+display : inline-block;
+margin : 20px;
+margin-right : 5px;
+}
+.players{
+font-size : 20px;
+}
+.popmessagecontainer{
+
+}
+.popmessage{
+margin-top : 1em;
+}
+.selectormessage{
+font-size : 80px;
+font-family : arial;
+margin : 30px;
+color : red;
+}
+#close{
+font-family : arial;
+float : right;
+font-size:50px;
+top : 10px;
+margin-top : 0px;
+transform : rotate(45deg);
+cursor: all-scroll;
+}
+.resultcontainer{
+width : 100%;
+height : 100%;
+position : absolute;
+top : 0px;
+background-color : rgba(0,0,0,0.7);
+text-align : center;
+padding-top : 200px;
+display : none;
+}
+.gameover{
+color : red;
+font-size : 60px;
+}
+.result{
+font-size: 40px;
+color : green;
+}
+.refresh{
+color : gold;
+}
